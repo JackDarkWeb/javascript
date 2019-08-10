@@ -67,7 +67,7 @@ while(isNaN(number)){
         alert(number + ' est negatif');
     }
 }
-/*
+
 let number = Number(prompt('Enter your number :'));
 if(number > 0){
     alert(number + ' est positif');
@@ -118,13 +118,15 @@ const Hello = function (name) {
 const HelloTo = (name) =>{
     const message = `Hello ${name} encore`;
     return message;
-}
+};
 
-alert(Hello("Jack"));
-alert(HelloTo("Jack"));
-*/
+// alert(Hello("Jack"));
+// alert(HelloTo("Jack"));
+
 
 //LES OBJECTS
+
+
 
 // Declaration object
 const stylo = function (type, color,  marque) {
@@ -149,13 +151,14 @@ tab.forEach(object => {
 
 
 
+
 /*
 //Access to the property object
 stylo.color = 'blue';
 stylo.price = 2;
 alert(stylo.color);
 alert(`Le prix du ${stylo.marque} est ${stylo.price} euro`)
-*/
+
 
 class Person{
     constructor(name, email, address){
@@ -164,8 +167,18 @@ class Person{
         this.address = address;
     }
     static description(){
-        let message = ``;
+        let message = `I m name ${nthis.ame} and my mail is ${this.email} and address where i live is ${this.address}`;
 
         return message;
     }
 }
+const desc = Person('Alona', 'alona@yahoo.fr', 'clobakhanskyi');
+
+// confirm('yes ? ');
+const name = String(prompt("Как тебя зовут "));
+const age = Number(prompt("Сколько лет тебе "));
+
+if(confirm(`тебя зовут ${name} и у тебя ${age} лет ?` )){
+    alert(`Доброе утро  ${name} и у тебя есть ${age} лет`);
+}*/
+

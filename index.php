@@ -10,7 +10,7 @@
     <button class="btn btn-success">Tester</button>
 </div>
 
-<script async src="script.js"></script>
+<script async src="test_unitaire.js"></script>
 </body>
 </html>
 
