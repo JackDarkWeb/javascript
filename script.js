@@ -1,7 +1,7 @@
 //TRANSFORMER UNE CHAINE EN UN TABLEAU NORMAL
-/*
-let string  = "Je suis un hero et un vainqueur";
-let tabString = Array.from(string);
+
+let strings  = "Je suis un hero et un vainqueur";
+let tabString = Array.from(strings);
 tabString.forEach(value => {
     alert(value);
 });
@@ -9,7 +9,7 @@ tabString.forEach(value => {
 //alert(name);
 
 
-/*
+
 // let number = Number(prompt('Enter your number :'));
 
 for(let i = 0; i <= 4; i++){
@@ -25,7 +25,7 @@ while(true){
         break;
     }
 }
- /*
+
 let products = [];
 // alert(typeof(products));
 
@@ -56,8 +56,7 @@ while(log !== login){
         break;
     }
 }
-*/
-/*
+
 while(isNaN(number)){
 
     let number = Number(prompt('Enter your number :'));
@@ -77,7 +76,7 @@ if(number > 0){
 
 
 
-/*const temp1 = 36.9;
+const temp1 = 36.9;
 const temp2 = 37.6;
 const temp3 = 37.1;
 console.log(temp1, temp2, temp3); // "36.9 37.6 37.1"
@@ -152,8 +151,10 @@ tab.forEach(object => {
 
 
 
-/*
+
 //Access to the property object
+
+
 stylo.color = 'blue';
 stylo.price = 2;
 alert(stylo.color);
@@ -180,7 +181,7 @@ const age = Number(prompt("Сколько лет тебе "));
 
 if(confirm(`тебя зовут ${name} и у тебя ${age} лет ?` )){
     alert(`Доброе утро  ${name} и у тебя есть ${age} лет`);
-}*/
+}
 
 
 //Function qui return un tableau des mots composes dans une string
