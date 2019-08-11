@@ -182,3 +182,57 @@ if(confirm(`тебя зовут ${name} и у тебя ${age} лет ?` )){
     alert(`Доброе утро  ${name} и у тебя есть ${age} лет`);
 }*/
 
+
+//Function qui return un tableau des mots composes dans une string
+const getWordCount = (stringToTest) => {
+    const wordArray = stringToTest.split(' ');
+    return wordArray.length;
+};
+const count = getWordCount('je suis heureux');
+//alert(count);
+
+const getLettersCount = (stringToTest) => {
+    const  wordArray = stringToTest.split(' ');
+    let totalLetters = 0;
+
+    for(let word of wordArray){
+        // retire la ponctuation pour ne compter que les lettres
+        word = word.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "");
+        totalLetters += word.length;
+
+    }
+    return totalLetters;
+};
+// alert(getLettersCount('#je suis heureux'));
+
+let string = 'Je suis pret';
+let t = string.replace('pret', 'p');
+//alert(t)
+
+// Get type of variable
+
+let tab = ['a', 'o', ['jack', 28], ['paul'], 25];
+//alert(tab.length);
+//alert(typeof t);
+let str = 'test';
+for(let item of str){
+    //alert(item);
+}
+const getLength = (str) => {
+    let  count = 0;
+    for(let item of str){
+        if(typeof item === 'object'){
+            count += item.length;
+        }else{
+            count++;
+        }
+    }
+    return count;
+};
+
+alert(getLength(tab));
+
+
+
+
+
