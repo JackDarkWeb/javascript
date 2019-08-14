@@ -1,30 +1,4 @@
-class Dom{
 
-    static getId(name){
-        return document.getElementById(name);
-    }
-    static getClass(name){
-        let classes = [] ;
-        classes = document.getElementsByClassName(name);
-        return classes;
-    }
-    static getTag(name){
-        let tags = [];
-        tags = document.getElementsByTagName(name);
-        return tags;
-    }
-    static create(name, parent){
-        const elt = document.createElement(name);
-        return parent.appendChild(elt);
-    }
-
-    static getClassCount(name){
-        return this.getClass(name).length;
-    }
-    static getTagsCount(name){
-        return this.getTag(name).length;
-    }
-}
 
 
 let getForms = () =>{

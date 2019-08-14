@@ -77,6 +77,8 @@
 </div>
 
 <script defer async src="dom.js"></script>
+<script defer async src="Dom.js"></script>
+<script defer async src="events.js"></script>
 </body>
 </html>
 
