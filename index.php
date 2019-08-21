@@ -64,6 +64,20 @@
             <input type="text" name="user" id="user" placeholder="Enter your username" onkeyup="addInput(this.value)" />
             <span class="text-danger"></span>
         </div>
+
+        <div class="col-md-4" id="text_add">
+
+        </div>
+
+        <div class="col-md-4">
+            <input type="text" id="events" placeholder="Enter your name"/><br/><br/>
+            <select name="choice" id="choice">
+                <option value="Paris">Paris</option>
+                <option value="Berlin">Berlin</option>
+                <option value="Rome">Rome</option>
+            </select>
+        </div>
+
     </div>
 
 
@@ -76,9 +90,10 @@
 
 </div>
 
-<script defer async src="dom.js"></script>
-<script defer async src="Dom.js"></script>
-<script defer async src="events.js"></script>
+
+<script src="Doms.js"></script>
+<script  src="dom.js"></script>
+<script src="events.js"></script>
 </body>
 </html>
 
