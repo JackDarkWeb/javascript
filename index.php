@@ -7,7 +7,76 @@
 </head>
 <body>
 <div class="text-center mt-5">
+
+
     <div class="row mt-5">
+        <div class="col-md-8 ">
+            <form method="post" action="" id="formController">
+
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Username</label>
+                    <input type="text" class="form-control" id="username" placeholder="Enter your username">
+                </div>
+
+                <div class="form-group">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                </div>
+
+                <div class="form-group">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirmPassword" placeholder="confirm Password">
+                </div>
+
+
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Select your country</label>
+                    <select class="form-control" id="select">
+                        <option value="france">France</option>
+                        <option value="italie">Italie</option>
+                        <option value="canada">Canada</option>
+                        <option value="russie">Russie</option>
+                        <option value="usa">USA</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect2">Multiple select</label>
+                    <select multiple class="form-control" id="multiple">
+                        <option value="pommes">Pommes</option>
+                        <option value="bananes">Bananes</option>
+                        <option value="citrons">Citrons</option>
+                        <option value="ananas">Ananas</option>
+                        <option value="coco">Coco</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Textarea</label>
+                    <textarea class="form-control" id="textarea" rows="3"></textarea>
+                </div>
+                <button type="submit"class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div><br/><br/><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="row mt-5">
+
         <div class="col-md-4">
             <p id="content">Le formulaire</p>
             <form method="post" action="" id="formulary">
@@ -70,12 +139,16 @@
         </div>
 
         <div class="col-md-4">
-            <input type="text" id="events" placeholder="Enter your name"/><br/><br/>
-            <select name="choice" id="choice">
-                <option value="Paris">Paris</option>
-                <option value="Berlin">Berlin</option>
-                <option value="Rome">Rome</option>
-            </select>
+            <form method="post" action="" id="form">
+                <input type="text" id="events" placeholder="Enter your name"/><br/><br/>
+                <select name="choice" id="choice">
+                    <option value="Paris">Paris</option>
+                    <option value="Berlin">Berlin</option>
+                    <option value="Rome">Rome</option>
+                </select><br/><br/>
+
+                <button type="submit">Submit</button>
+            </form>
         </div>
 
     </div>
@@ -92,6 +165,7 @@
 
 
 <script src="Doms.js"></script>
+<script src="Validator.js"></script>
 <script  src="dom.js"></script>
 <script src="events.js"></script>
 </body>

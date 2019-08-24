@@ -41,7 +41,7 @@ class Dom{
 
     /**
      *
-     * @param name
+     * @param tagName
      * @param parent
      * @returns {any | ActiveX.IXMLDOMNode}
      */
@@ -58,6 +58,61 @@ class Dom{
      */
     static html(name, text = null){
         return this.getId(name).innertHTML = text;
+    }
+
+    /**
+     * @param idName
+     * @returns {*}
+     */
+    static getValueSelect(idName){
+        const id = this.getId(idName);
+       return id.value;
+    }
+
+    /**
+     *
+     * @param idName
+     * @returns {*}
+     */
+    static getValuesSelects(idName){
+        const id = this.getId(idName);
+        return id.value;
+    }
+
+    /**
+     *
+     * @param idNames
+     * @returns {[]}
+     */
+    static getValuesCheckedBox(idNames = []){
+        const values = [];
+        for(const idName of idNames){
+            const id = this.getId(idName);
+            if(id.checked === true){
+                values.push(id.value);
+            }
+        }
+        return values;
+    }
+
+    /**
+     *
+     * @param idNames
+     * @returns {string}
+     */
+    static getValueCheckedRadio(idNames = []){
+        let values = '';
+        for(const idName of idNames){
+            const id = this.getId(idName);
+            if(id.checked === true){
+                values = id.value;
+            }
+        }
+        return values;
+    }
+    static getValuesSelectsMultiple(idName){
+        const id = this.getId(idName);
+        alert(typeof id.value.selected);
     }
 
     /**

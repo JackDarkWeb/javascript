@@ -18,4 +18,20 @@ function isValid(value) {
     return /^[a-zA-Z]+$/.test(value);
 }
 const tester = isValid('jacK');
-alert(tester);
+//alert(tester);
+
+const form = Dom.getId('form');
+form.addEventListener('submit', function (event) {
+    //event.preventDefault();
+   return false;
+});
+
+//alert(Validator.isValidName('username'));
+// TRAITEMENT DE FORM
+
+const formController = Dom.getId('formController');
+formController.addEventListener('submit', function (event) {
+    event.preventDefault();
+   alert(Validator.isValidName('username'));
+
+});
